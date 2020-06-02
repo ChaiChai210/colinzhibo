@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/dp_289"
+        android:layout_height="@dimen/dp_244"
+        app:srcCompat="@drawable/base_error" />
+
+    <TextView
+        android:id="@+id/empty_view_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:padding="5dp"
+        android:text="抱歉，您访问的页面失联了"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

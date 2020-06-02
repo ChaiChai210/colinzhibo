@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_live"
+        android:icon="@drawable/ic_live"
+        android:title="@string/main_live" />
+    <item
+        android:id="@+id/main_video"
+        android:icon="@drawable/ic_video"
+        android:title="@string/main_video" />
+    <item
+        android:id="@+id/main_forum"
+        android:icon="@drawable/ic_forum"
+        android:title="@string/main_forum" />
+  <!--  <item
+        android:id="@+id/main_city"
+        android:icon="@drawable/ic_city"
+        android:title="@string/main_city" />-->
+    <item
+        android:id="@+id/main_user"
+        android:icon="@drawable/ic_user"
+        android:title="@string/main_user" />
+</menu>

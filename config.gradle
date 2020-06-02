@@ -1,0 +1,36 @@
+ext {
+    android = [
+            compileSdkVersion: 28,
+            minSdkVersion    : 19,
+            targetSdkVersion : 28,
+            buildToolsVersion : "28.0.3",
+            versionCode :   1,
+            versionName :   "1.0.1"
+    ]
+//    BiaoMei = [
+//            versionCode :   2019082503,
+//            versionName :   "4.2"
+//    ]
+    dev_manifestPlaceholders=[
+            serverHost         :  "http://web.yuyingbaobei.com/",
+            //openStall推广
+            openKey          : "rji4ix",
+            JPUSH_PKGNAME : "com.huaxin.shequ",
+            JPUSH_APPKEY :"eb408da3af957d3a7b859973",
+            JPUSH_CHANNEL : "developer-default",
+            //友盟统计
+            umengAppKey      : "5e93d7fe895cca140f0000a6"
+    ]
+    prod_manifestPlaceholders=[
+            serverHost         :  "http://api.hynemanlab.cn/",
+//            serverHost         :  "http://api.huatdd.com/",
+            JPUSH_PKGNAME : "com.huaxin.shequ",
+            JPUSH_APPKEY :"eb408da3af957d3a7b859973",
+            JPUSH_CHANNEL : "developer-default",
+            //openStall推广ddes
+            openKey          : "ob153p",
+            //友盟统计
+            umengAppKey      : "5e93d7fe895cca140f0000a6"
+    ]
+
+}

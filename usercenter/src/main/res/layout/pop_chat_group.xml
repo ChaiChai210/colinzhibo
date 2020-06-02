@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="248dp"
+        android:layout_height="37.6dp"
+        android:background="@drawable/user_bg_chat_head"
+        android:gravity="center"
+        android:text="加入组织"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+
+
+    <com.kproduce.roundcorners.RoundLinearLayout
+        android:layout_width="248dp"
+        android:layout_height="match_parent"
+        android:background="#252041"
+        app:rBottomRightRadius="@dimen/dp_6"
+        app:rBottomLeftRadius="@dimen/dp_6"
+        android:divider="@drawable/shape_divider"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingBottom="@dimen/dp_14"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tv_potato"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_potato_logo"
+            android:drawablePadding="@dimen/dp_6"
+            android:gravity="center"
+            android:text="Potato"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_telegram"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_telegram_logo"
+            android:drawablePadding="@dimen/dp_6"
+            android:gravity="center"
+            android:text="Telegram"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/sp_14" />
+        <TextView
+            android:id="@+id/tv_weibo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_weibo_logo"
+            android:drawablePadding="@dimen/dp_6"
+            android:gravity="center"
+            android:text="微博"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/sp_14" />
+        <TextView
+            android:id="@+id/tv_github"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_github_logo"
+            android:drawablePadding="@dimen/dp_6"
+            android:gravity="center"
+            android:text="Github"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/sp_14" />
+    </com.kproduce.roundcorners.RoundLinearLayout>
+
+    <com.kproduce.roundcorners.RoundButton
+        android:id="@+id/btn_cancel"
+        app:rRadius="@dimen/dp_6"
+        android:layout_width="@dimen/dp_248"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_18"
+        android:background="#252041"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/text_color"
+        android:textSize="16sp" />
+</LinearLayout>

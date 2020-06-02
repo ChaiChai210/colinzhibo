@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_46"
+        android:background="#27203B">
+
+        <com.kproduce.roundcorners.RoundRelativeLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_toStartOf="@+id/tv_cancel"
+            android:background="@color/colorPrimary"
+            android:paddingEnd="@dimen/dp_10"
+            app:rLeftRadius="@dimen/dp_10"
+            app:rRightRadius="@dimen/dp_10"
+            app:rStrokeColor="@color/colorGray4"
+            app:rStrokeWidth="@dimen/dp_1">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_toStartOf="@+id/iv_delete1"
+                android:layout_toEndOf="@+id/iv_search"
+                android:background="@null"
+                android:hint="请输入国家或地区"
+                android:imeOptions="actionSearch"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/colorContent"
+                android:textColorHint="#5A5767"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_delete1"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_delete" />
+        </com.kproduce.roundcorners.RoundRelativeLayout>
+    </RelativeLayout>
+
+
+    <com.colin.indexview.IndexStickyView
+        android:id="@+id/indexStickyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sideBarBackgroundColor="@android:color/transparent"
+        app:sideBarFocusBackgroundColor="@android:color/holo_red_dark"
+        app:sideBarFocusTextColor="@android:color/white"
+        app:sideBarTextColor="#8a8a8a"
+        app:sideBarTextSize="14sp"
+        app:sideBarTextSpace="4dp"
+        app:sideBarWidth="24dp" />
+</LinearLayout>
+

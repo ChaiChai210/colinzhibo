@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="video_tabs">
+        <item>@string/recommend</item>
+        <item>@string/find</item>
+        <item>@string/tremolo</item>
+    </string-array>
+    <string-array name="community_tabs">
+        <item>@string/recommend_tab1</item>
+        <item>@string/recommend_tab2</item>
+        <item>@string/recommend_tab3</item>
+        <item>@string/recommend_tab4</item>
+
+    </string-array>
+    <string-array name="msg_tabs">
+        <item>消息</item>
+        <item>系统通知</item>
+
+    </string-array>
+    <string-array name="follow_tabs">
+        <item>关注</item>
+        <item>粉丝</item>
+
+    </string-array>
+    <string-array name="video_collect_tabs">
+        <item>长视频</item>
+        <item>短视频</item>
+
+    </string-array>
+    <string-array name="option_publish">
+        <item>@string/recommend_tab4</item>
+        <item>@string/recommend_tab2</item>
+        <item>@string/recommend_tab3</item>
+
+    </string-array>
+</resources>

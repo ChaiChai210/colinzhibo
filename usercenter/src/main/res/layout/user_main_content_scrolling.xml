@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_8"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.kproduce.roundcorners.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/title_line"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10"
+            app:rRadius="@dimen/dp_8">
+
+            <LinearLayout
+                android:id="@+id/ll_promotion"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_promotion"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/user_my_promotion" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="我要推广"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_my_purse"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_feedback"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/user_my_purse" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="我的钱包"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_anchor_verify"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_anchor_verify"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/user_anchor_verify" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="主播认证"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_chat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_chat_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="火爆交流群"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </com.kproduce.roundcorners.RoundLinearLayout>
+        <com.xuexiang.xui.widget.banner.recycler.BannerLayout
+            android:id="@+id/bl_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            app:bl_autoPlaying="true"
+            app:bl_centerScale="1.2"
+            app:bl_itemSpace="12dp"
+            app:bl_moveSpeed="1.8"
+            android:layout_marginTop="@dimen/dp_10"
+            app:bl_showIndicator="false" />
+
+        <com.kproduce.roundcorners.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10"
+            app:rRadius="@dimen/dp_10">
+
+<!--            <com.huaxin.library.custom.UserCenterItem-->
+<!--                android:id="@+id/uci_follow"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:uci_drawable="@drawable/ic_follow"-->
+<!--                app:uci_title="关注直播" />-->
+
+            <com.huaxin.library.custom.UserCenterItem
+                android:id="@+id/uci_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:uci_drawable="@drawable/ic_post"
+                app:uci_content="目前有0个帖子"
+                app:uci_title="我的帖子" />
+
+            <com.huaxin.library.custom.UserCenterItem
+                android:id="@+id/uci_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:uci_drawable="@drawable/ic_record"
+                app:uci_content="目前有0条记录"
+                app:uci_title="观影记录" />
+
+            <com.huaxin.library.custom.UserCenterItem
+                android:id="@+id/uci_collect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:uci_drawable="@drawable/ic_collect"
+                app:uci_content="目前有0个收藏"
+                app:uci_title="我的收藏" />
+            <com.huaxin.library.custom.UserCenterItem
+                android:id="@+id/uci_download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:uci_drawable="@drawable/ic_download"
+                app:uci_title="我的下载" />
+        </com.kproduce.roundcorners.RoundLinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

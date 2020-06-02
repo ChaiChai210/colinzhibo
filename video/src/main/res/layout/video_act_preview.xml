@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/dp_10"
+    android:orientation="horizontal">
+
+    <com.huaxin.library.custom.SuperPlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.huaxin.library.custom.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player"
+        app:title="提取视频长度" />
+    <RadioGroup
+        android:id="@+id/rg_choose_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_30s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_color"
+            android:checked="true"
+            android:text="30秒"
+            android:textColor="@color/colorTitle" />
+
+        <RadioButton
+            android:id="@+id/rb_1min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_color"
+            android:text="1分钟"
+            android:textColor="@color/colorTitle" />
+        <RadioButton
+            android:id="@+id/rb_2min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_color"
+            android:text="2分钟"
+            android:textColor="@color/colorTitle" />
+    </RadioGroup>
+
+    <com.kproduce.roundcorners.RoundButton
+        android:id="@+id/btn_submit"
+        android:layout_width="@dimen/dp_130"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginBottom="@dimen/dp_72"
+        android:background="@color/text_color"
+        android:gravity="center"
+        android:text="确认"
+        app:rRadius="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+</androidx.constraintlayout.widget.ConstraintLayout>

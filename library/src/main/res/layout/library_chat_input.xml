@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/input_title_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="57dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <EditText
+            android:id="@+id/chat_message_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/msg_editor_border"
+            android:hint="亲~说点什么呢"
+            android:maxHeight="120dp"
+            android:minHeight="30dp"
+            android:paddingStart="@dimen/dp_13"
+            android:paddingTop="@dimen/dp_7"
+            android:paddingEnd="@dimen/dp_13"
+            android:paddingBottom="@dimen/dp_7"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="#5A5767"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:textSize="@dimen/sp_12" />
+
+
+        <ImageView
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:background="@drawable/ic_user_send_msg"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

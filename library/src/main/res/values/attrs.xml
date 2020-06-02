@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonRefresh">
+        <attr name="crv_refreshEnable" format="boolean"/>
+        <attr name="crv_loadMoreEnable" format="boolean"/>
+        <attr name="crv_emptyEnable" format="boolean"/>
+        <attr name="crv_layout" format="reference"/>
+        <attr name="crv_itemCount" format="integer"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="DYLoadingView">
+        <attr name="radius1" format="dimension" />
+        <attr name="radius2" format="dimension" />
+        <attr name="rtlScale" format="float" />
+        <attr name="ltrScale" format="float" />
+        <attr name="color1" format="color" />
+        <attr name="color2" format="color" />
+        <attr name="mixColor" format="color" />
+        <attr name="duration" format="integer" />
+        <attr name="pauseDuration" format="integer" />
+        <attr name="gap" format="dimension" />
+        <attr name="scaleStartFraction" format="float" />
+        <attr name="scaleEndFraction" format="float" />
+    </declare-styleable>
+    <declare-styleable name="MaxLayout">
+        <attr name="ml_maxWidth" format="dimension" />
+        <attr name="ml_maxHeight" format="dimension" />
+        <attr name="ml_ratio" format="float" />
+        <attr name="ml_ratio_standard">
+            <enum name="w_h" value="1" />
+            <enum name="h_w" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="TabControlView">
+        <!--文字字体的大小，默认14sp-->
+        <attr name="tcv_textSize" format="dimension" />
+        <!--没选中的文字颜色，默认#299EE3-->
+        <attr name="tcv_unselectedTextColor" format="reference" />
+        <!--选中的文字颜色， 默认Color.WHITE-->
+        <attr name="tcv_selectedTextColor" format="reference" />
+        <!--没选中的背景颜色， 默认Color.TRANSPARENT-->
+        <attr name="tcv_unselectedColor" format="reference" />
+        <!--选中的背景颜色， 默认#299EE3-->
+        <attr name="tcv_selectedColor" format="reference" />
+        <!--边框宽度，默认1dp-->
+        <attr name="tcv_strokeWidth" format="dimension" />
+        <!--选项卡间的padding-->
+        <attr name="tcv_item_padding" format="dimension" />
+        <!--选项卡水平间的padding-->
+        <attr name="tcv_item_padding_horizontal" format="dimension" />
+        <!--选项卡垂直间的padding-->
+        <attr name="tcv_item_padding_vertical" format="dimension" />
+        <!--选项卡中展示的内容-->
+        <attr name="tcv_items" format="reference" />
+        <!--选项卡中选中的内容（默认和展示的一样）-->
+        <attr name="tcv_values" format="reference" />
+        <!--是否等宽显示，默认false-->
+        <attr name="tcv_equalWidth" format="boolean" />
+        <!--是否伸展开，填充整个父布局，默认false-->
+        <attr name="tcv_stretch" format="boolean" />
+        <!--默认选中项的索引-->
+        <attr name="tcv_defaultSelection" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="LinesEditView">
+        <attr name="classic_maxCount" format="integer" />
+        <attr name="classic_ignoreCnOrEn" format="boolean" />
+        <attr name="classic_hintText" format="string|reference" />
+        <attr name="classic_hintTextColor" format="color|reference" />
+        <attr name="classic_contentText" format="string|reference" />
+        <attr name="classic_contentTextSize" format="dimension|reference" />
+        <attr name="classic_contentTextColor" format="color|reference" />
+        <attr name="classic_contentViewHeight" format="dimension|reference" />
+    </declare-styleable>
+    <declare-styleable name="LoadingBar">
+        <attr name="lb_bg_color" format="color"/>
+        <attr name="lb_fg_color" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="UserCenterItem">
+        <attr name="uci_drawable" format="reference"/>
+        <attr name="uci_title" format="string|reference"/>
+        <attr name="uci_content" format="string|reference"/>
+    </declare-styleable>
+    <declare-styleable name="HeaderView">
+        <attr name="hv_color" format="color|reference"/>
+        <attr name="hv_title" format="string|reference"/>
+    </declare-styleable>
+    <declare-styleable name="SettingView">
+        <attr name="sv_title" format="string|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TitleLayout">
+        <attr name="title" format="string" />
+    </declare-styleable>
+</resources>

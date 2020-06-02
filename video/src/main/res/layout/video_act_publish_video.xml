@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_8">
+
+        <com.huaxin.library.custom.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="视频标题（标题5-20个字）" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/video_select_edit"
+            android:hint="请输入5-20个字"
+            android:padding="8dp"
+            android:textColor="@color/colorContent"
+            android:textColorHint="@color/colorContent"
+            android:textSize="@dimen/sp_14" />
+
+        <com.huaxin.library.custom.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_20"
+            app:title="上传/拍摄（视频格式：MP4）" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_upload_video"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/iv_upload_video" />
+
+            <ImageView
+                android:id="@+id/iv_upload_cover"
+                android:layout_width="@dimen/dp_0"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/iv_upload_cover" />
+
+        </LinearLayout>
+
+        <com.huaxin.library.custom.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_20"
+            app:title="视频分类（只能选择1个分类）" />
+
+        <com.donkingliang.labels.LabelsView
+            android:id="@+id/labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            app:labelBackground="@drawable/label_bg"
+            app:labelTextColor="@color/colorTitle"
+            app:labelTextHeight="@dimen/dp_22"
+            app:labelTextPaddingLeft="@dimen/dp_7"
+            app:labelTextPaddingRight="@dimen/dp_7"
+            app:labelTextSize="10sp"
+            app:lineMargin="@dimen/dp_7"
+            app:selectType="SINGLE"
+            app:wordMargin="@dimen/dp_7" />
+
+        <com.huaxin.library.custom.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_20"
+            app:title="视频标签（最多选10个标签）" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_video_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20" />
+
+        <com.huaxin.library.custom.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_20"
+            app:title="是否原创" />
+
+        <RadioGroup
+            android:id="@+id/rg_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_not_original"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/text_color"
+                android:checked="true"
+                android:text="非原创"
+                android:textColor="@color/colorTitle" />
+
+            <RadioButton
+                android:id="@+id/rb_original"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/text_color"
+                android:text="原创"
+                android:textColor="@color/colorTitle" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.带有“花心社区”、HXSQ.TV、HX8.APP等字样 ,写于
+纸上或身上明显部位；"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2.带有花心社区logo,如打印至T恤、抱枕等…"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/sp_14" />
+
+        <com.huaxin.library.custom.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_20"
+            app:title="视频价格（ 非原创0~800钻石；原创0-1600钻石）" />
+
+        <EditText
+            android:id="@+id/et_video_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/video_select_edit"
+            android:hint="请输入价格"
+            android:padding="8dp"
+            android:textColor="@color/colorContent"
+            android:textColorHint="@color/colorContent"
+            android:textSize="@dimen/sp_14" />
+
+        <com.huaxin.library.custom.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_20"
+            app:title="精彩预览" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="对于15分钟以上的视频，可设置精彩预览以增加曝光度"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_set_preview"
+            android:layout_width="162dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/video_ic_bg_photo"
+            android:drawableTop="@drawable/ic_video_preview"
+            android:drawablePadding="@dimen/dp_7"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="立即设置"
+            android:textColor="#4B4A7C" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center_horizontal"
+            android:text="为鼓励原创，所有金币收入都可提现"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/sp_14" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center_horizontal"
+
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/tv_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTitle"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="@dimen/dp_232"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_32"
+            android:background="@drawable/bg_video_publish"
+            android:text="立即发布"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

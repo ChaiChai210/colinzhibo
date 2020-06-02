@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#030303"
+    android:orientation="vertical">
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/web_progress"
+        android:progressDrawable="@drawable/web_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+    <WebView
+        android:layerType="software"
+        android:id="@+id/my_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_circle_outside" />
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="1.5dp"
+        android:layout_marginTop="1.5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_user_center" />
+
+
+    <ImageView
+        android:id="@+id/iv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_70"
+        android:src="@drawable/ic_male" />
+    <ImageView
+        android:id="@+id/iv_lever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_70"
+        android:src="@drawable/user_lever_1" />
+
+</RelativeLayout>

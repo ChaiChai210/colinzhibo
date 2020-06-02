@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_operation"
+        android:layout_marginBottom="@dimen/dp_10" />
+    <LinearLayout
+        android:id="@+id/ll_operation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="35dp"
+        android:divider="@drawable/divider_video"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_choose_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全选"
+            android:textColor="@color/colorContent"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

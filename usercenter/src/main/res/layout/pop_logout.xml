@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="248dp"
+    android:layout_height="195dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/user_bg_popup_window"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/dp_58"
+        android:layout_height="@dimen/dp_54"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/user_bg_popup_center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_7"
+        android:text="退出花心社区"
+        android:textColor="@color/colorTitle"
+        android:textSize="@dimen/sp_18" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_7"
+        android:text="尊敬的用户，退出后部分功能不可使用，还望三思而行"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_25"
+        android:textColor="@color/colorTitle"
+        android:textSize="@dimen/sp_12" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_alignParentBottom="true"
+        android:src="@color/colorPrimary" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:divider="@drawable/shape_divider">
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="去意已决"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/colorContent"/>
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="我再想想"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/shape_user_bg_confirm_button"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/colorContent"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#181030"
+    android:orientation="horizontal"
+    android:paddingStart="9dp"
+    android:paddingTop="4dp"
+    android:paddingEnd="9dp">
+
+    <com.tencent.qcloud.tim.uikit.component.CircleImageView
+        android:id="@+id/conversation_icon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/default_head" />
+
+
+    <TextView
+        android:id="@+id/conversation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/conversation_icon"
+        android:ellipsize="end"
+        android:gravity="top|left"
+        android:singleLine="true"
+        android:text="aaa"
+        android:textColor="#B9B8C0"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/conversation_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#5A5767"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/conversation_last_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conversation_title"
+        android:layout_alignStart="@+id/conversation_title"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="内容"
+        android:textColor="#918E9D"
+        android:textSize="12.16sp" />
+
+
+    <!--    <com.tencent.qcloud.tim.uikit.component.UnreadCountTextView-->
+    <!--        android:id="@+id/conversation_unread"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_above="@+id/view_line"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="15.54dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:includeFontPadding="false"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textSize="10sp" />-->
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/conversation_last_msg"
+        android:layout_marginTop="8dp"
+        android:background="#181030" />
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_image" />
+
+    <com.kproduce.roundcorners.RoundRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_9"
+        android:layout_marginTop="@dimen/dp_79"
+        android:layout_marginEnd="@dimen/dp_9"
+        android:background="@drawable/bg_head_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_50"
+            android:drawableEnd="@drawable/ic_edit_user"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:text="游客"
+           />
+
+        <LinearLayout
+            android:id="@+id/ll_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nickname"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_9"
+                android:drawableEnd="@drawable/ic_divider"
+                android:drawablePadding="6dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                tools:text="ID:333333" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_user_location"
+                android:drawablePadding="4dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                tools:text="福州市" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_today_watch_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_user_info"
+            android:layout_marginStart="@dimen/dp_23"
+            android:layout_marginTop="@dimen/dp_16"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_watch_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3/3"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:text="3/3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="今日观影"
+                android:textColor="@color/colorTitle"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ll_today_watch_count"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_follow_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:text="32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="关注"
+                android:textColor="@color/colorTitle"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ll_today_watch_count"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_23"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_fans_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:text="32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="粉丝"
+                android:textColor="@color/colorTitle"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </com.kproduce.roundcorners.RoundRelativeLayout>
+
+
+    <com.huaxin.usercenter.custom.UserHeadView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

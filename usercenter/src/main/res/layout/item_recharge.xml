@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_comtainer"
+    android:background="@drawable/user_wallet_bg_unchecked"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+
+    <TextView
+        android:id="@+id/tv_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gradient"
+        android:drawableEnd="@drawable/user_small_diamond"
+        android:drawablePadding="4dp"
+        android:paddingStart="@dimen/dp_4"
+        android:paddingEnd="@dimen/dp_10"
+        android:textColor="@color/white"
+        tools:text="送1000000" />
+
+    <ImageView
+        android:id="@+id/iv_hot"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/user_hot_recharge"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_diamond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_19"
+        android:drawableEnd="@drawable/ic_diamond"
+        android:drawablePadding="2dp"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/sp_18"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/tv_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_diamond"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="2dp"
+        android:textColor="@color/colorContent"
+        android:textSize="@dimen/sp_14"
+        tools:text="￥100" />
+
+
+    <ImageView
+        android:id="@+id/iv_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_cb_checked" />
+</RelativeLayout>

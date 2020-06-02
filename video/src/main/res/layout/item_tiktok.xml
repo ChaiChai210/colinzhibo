@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+
+    <com.huaxin.video.views.ARelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <com.huaxin.video.custom.VodPlayerView
+            android:id="@+id/dy_video_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/btn_play"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:background="@color/transparent"-->
+        <!--            android:src="@drawable/ic_vod_play_normal"-->
+        <!--            android:visibility="gone" />-->
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop" />
+    </com.huaxin.video.views.ARelativeLayout>
+
+    <com.huaxin.video.views.DYLikeLayout
+        android:id="@+id/dy_like_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:id="@+id/tv_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dy_like_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:background="@null"
+        android:drawableTop="@drawable/video_ic_reward"
+        android:gravity="center"
+        android:text="打赏"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+    <com.huaxin.video.views.likebutton.DYLikeView
+        android:id="@+id/dy_like_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_collection_count"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="-10dp"
+        app:anim_scale_factor="2"
+        app:circle_end_color="#E94C7F"
+        app:circle_start_color="#E7064F"
+        app:dots_primary_color="#E7064F"
+        app:dots_secondary_color="#E94C7F"
+        app:icon_size="30dp"
+        app:like_drawable="@drawable/ic_heart_on"
+        app:unlike_drawable="@drawable/ic_heart_off" />
+
+    <TextView
+        android:id="@+id/tv_collection_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_comment"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_23"
+        android:background="@null"
+        android:drawableTop="@mipmap/ic_comment"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_50"
+        android:layout_marginBottom="@dimen/dp_22"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_description"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_50"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <com.donkingliang.labels.LabelsView
+        android:id="@+id/labels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_title"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:layout_marginBottom="@dimen/dp_20"
+        app:labelBackground="@drawable/video_label_bg"
+        app:labelTextColor="@color/white"
+        app:labelTextHeight="@dimen/dp_26"
+        app:labelTextPaddingLeft="@dimen/dp_7"
+        app:labelTextPaddingRight="@dimen/dp_7"
+        app:labelTextSize="12sp"
+        app:lineMargin="@dimen/dp_7"
+        app:maxLines="1"
+        app:selectType="NONE"
+        app:wordMargin="@dimen/dp_7" />
+</RelativeLayout>

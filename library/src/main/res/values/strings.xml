@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">HuaXin</string>
+
+    <string name="text_input_search">请输入内容...</string>
+    <string name="text_history_search">历史搜索</string>
+    <string name="text_hot_search">热门搜索</string>
+    <string name="text_cancel">取消</string>
+
+    <string name="picker_str_error">点错了</string>
+    <string name="picker_str_sure">确定</string>
+
+    <string name="state_idle">闲置</string>
+    <string name="state_pending">等待</string>
+    <string name="state_unknown">未知</string>
+    <string name="state_running">运行</string>
+    <string name="pause">暂停</string>
+    <string name="taskstart">任务开始</string>
+    <string name="connected">连接完成</string>
+    <string name="downloading">正在下载</string>
+    <string name="continues">继续</string>
+    <string name="paused">已暂停</string>
+    <string name="completed">已完成</string>
+    <string name="complete">完成</string>
+    <string name="total_downloads">总下载量：</string>
+    <string name="error">错误</string>
+    <string name="mb">MB</string>
+    <string name="install">安装</string>
+    <string name="wait">等待</string>
+    <string name="download">下载</string>
+    <string name="retry">重试</string>
+    <string name="play">播放</string>
+
+    <string name="main_live">直播</string>
+    <string name="main_video">视频</string>
+    <string name="main_forum">社区</string>
+    <string name="main_user">我的</string>
+    <string name="recommend">推荐</string>
+    <string name="find">发现</string>
+    <string name="tremolo">抖阴</string>
+    <string name="more">更多</string>
+    <string name="change_batch">换一批</string>
+    <string name="title_all_type">全部分类</string>
+    <string name="type_complex">综合</string>
+    <string name="type_play">最多播放</string>
+    <string name="type_update">最近更新</string>
+    <string name="type_like">最多喜欢</string>
+    <string name="share">分享</string>
+    <string name="video_play_num">&#160;&#160;%1$d次播放</string>
+    <string name="may_like">猜你喜欢</string>
+    <string name="comment">评论</string>
+    <string name="hint_play_num">次播放</string>
+    <string name="hint_comment_num">热评</string>
+    <string name="hint_create_time">&#160;&#160;%1$s上架</string>
+    <string name="hint_think_good">%1$s\%%的人觉得很赞</string>
+    <string name="hint_send_comment">亲~说点什么呢</string>
+    <string name="recommend_tab1">推荐</string>
+    <string name="recommend_tab2">图片</string>
+    <string name="recommend_tab3">短文</string>
+    <string name="recommend_tab4">视频</string>
+    <string name="login_tile">手机登录</string>
+    <string name="number_code">+86</string>
+    <string name="hint_input_number">请输入手机号</string>
+    <string name="hint_input_code">请输入验证码</string>
+    <string name="send_sms_code">获取验证码</string>
+    <string name="hint_user_agreement">点击登录即代表您同意《用户协议》</string>
+    <string name="hint_number_error">手机号不能为空</string>
+    <string name="hint_code_error">验证码不能为空</string>
+</resources>

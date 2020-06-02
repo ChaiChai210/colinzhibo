@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">community</string>
+    <string name="hint_input_community">说说你的看法…</string>
+    <string name="text_title">标题:</string>
+    <string name="hint_title">标题字数4–20</string>
+    <string name="text_choose_circle">选择圈子</string>
+
+
+</resources>

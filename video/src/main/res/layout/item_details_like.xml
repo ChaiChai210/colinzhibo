@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huaxin.library.custom.MaxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/maybe_like_bg"
+    android:orientation="vertical"
+    app:ml_ratio="0.3"
+    app:ml_ratio_standard="w_h">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="0.48"
+            app:riv_corner_radius="@dimen/dp_7" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_9"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_weight="0.52"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/dp_9">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="小姐姐上演制服诱惑，大胸翘..."
+                android:textColor="@color/colorTitle"
+                android:textSize="@dimen/sp_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6">
+
+                <com.donkingliang.labels.LabelsView
+                    android:id="@+id/labels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:labelBackground="@drawable/tag_item_bg"
+                    app:labelTextColor="@color/colorTitle"
+                    app:labelTextHeight="@dimen/dp_22"
+                    app:labelTextPaddingLeft="@dimen/dp_7"
+                    app:labelTextPaddingRight="@dimen/dp_7"
+                    app:labelTextSize="10sp"
+                    app:lineMargin="@dimen/dp_7"
+                    app:maxLines="2"
+                    app:selectType="SINGLE"
+                    app:wordMargin="@dimen/dp_7" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</com.huaxin.library.custom.MaxLayout>

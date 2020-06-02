@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="@dimen/dp_150"
+                    android:src="@drawable/user_bg_wallet"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.huaxin.usercenter.custom.HeaderView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:orientation="horizontal"
+                    app:hv_color="@color/text_color"
+                    app:hv_title="账户余额"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_diamond_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_40"
+                    android:drawableEnd="@drawable/user_wallet_diamond"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:text="16660"
+                    android:textColor="@color/white"
+                    android:textSize="34sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.kproduce.roundcorners.RoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                app:rRadius="@dimen/dp_10">
+
+                <com.huaxin.usercenter.custom.HeaderView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:orientation="horizontal"
+                    app:hv_color="@color/colorTitle"
+                    app:hv_title="VIP特权"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="59dp"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:drawableTop="@drawable/user_watch_count"
+                        android:drawablePadding="4dp"
+                        android:text="观影次数"
+                        android:textColor="@color/colorContent"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:drawableTop="@drawable/user_main_telephone"
+                        android:drawablePadding="4dp"
+                        android:text="获取号码"
+                        android:textColor="@color/colorContent"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:drawableTop="@drawable/user_download_video"
+                        android:drawablePadding="4dp"
+                        android:text="下载视频"
+                        android:textColor="@color/colorContent"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+            </com.kproduce.roundcorners.RoundLinearLayout>
+
+            <com.kproduce.roundcorners.RoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                app:rRadius="@dimen/dp_10">
+
+                <com.huaxin.usercenter.custom.HeaderView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:orientation="horizontal"
+                    app:hv_color="@color/colorTitle"
+                    app:hv_title="支付方式" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_pay_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </com.kproduce.roundcorners.RoundLinearLayout>
+
+            <com.kproduce.roundcorners.RoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                app:rRadius="@dimen/dp_10">
+
+                <com.huaxin.usercenter.custom.HeaderView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:orientation="horizontal"
+                    app:hv_color="@color/colorTitle"
+                    app:hv_title="充值金额" />
+
+                <GridView
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:id="@+id/gv_charge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="101dp"
+                    android:gravity="center"
+                    android:numColumns="3"
+                    android:stretchMode="spacingWidthUniform" />
+            </com.kproduce.roundcorners.RoundLinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageButton
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_67"
+        android:layout_marginBottom="@dimen/dp_35"
+        android:onClick="submitMoney"
+        android:background="@drawable/user_btn_submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginRight="@dimen/dp_8"
+        android:background="@drawable/shape_user_submit_money"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/btn_submit"
+        app:layout_constraintTop_toTopOf="@+id/btn_submit"
+        android:paddingStart="@dimen/dp_15"
+        android:paddingEnd="@dimen/dp_15"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="请确认充值金额:"
+            android:textColor="@color/colorContent"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/text_color"
+            tools:text="1000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

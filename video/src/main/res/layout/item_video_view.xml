@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_type_video_bg"
+    android:orientation="vertical">
+
+    <com.huaxin.library.custom.MaxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ml_ratio="0.62"
+        app:ml_ratio_standard="w_h">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/riv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:riv_corner_radius_top_left="@dimen/dp_7"
+            app:riv_corner_radius_top_right="@dimen/dp_7" />
+
+    </com.huaxin.library.custom.MaxLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/colorTitle"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_6"
+        android:layout_marginBottom="@dimen/dp_8" />
+</LinearLayout>

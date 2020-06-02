@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_up"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="4dp"
+        android:src="@color/colorTitle" />
+
+    <ImageView
+        android:id="@+id/iv_time"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_below="@+id/iv_up"
+        android:src="@drawable/user_watch_ic_time"
+        />
+
+    <ImageView
+        android:id="@+id/iv_down"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/iv_time"
+        android:layout_marginStart="4dp"
+        android:src="@color/colorTitle" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorTitle"
+        android:textSize="12sp"
+        tools:text="今日" />
+</RelativeLayout>
